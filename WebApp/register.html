@@ -8,18 +8,46 @@
 
     <h1>RegisterDetails</h1>
 
-    <form>
-      <label>Username</label>
-      <input type="text"/>
-      <label>Password</label>
-      <input type="password"/>
-      Male:<input type="radio" name="f1"/>
-      Female:<input type="radio" name="f1"/>
-      UG<input type="checkbox" />
-      PG<input type="checkbox"/>
-      <textarea  cols="30" rows="10">
-
-      </textarea>
-      <input type="submit" value="Register"/>
-    </form>
+    <table width="30%" height="30%">
+      <tr>
+        <td>UserName</td>
+        <td><input type="text"/></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password"/></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          Male<input type="radio" name="gender"/>
+          Female <input type="radio" name="gender"/>
+        </td>
+      </tr>
+      <tr>
+        <td>Degree</td>
+        <td>
+          <select>
+            <option value="">Bachelor</option>
+             <option value="">Masters</option>
+             <option value="">Doctorate</option>
+              
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Course</td>
+        <td>
+          UG<input type="checkbox"/>
+          PG<input type="checkbox"/>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Register"/>
+          <input type="reset" value="Reset"/>
+        </td>
+      </tr>
+    </table>
 </center>
