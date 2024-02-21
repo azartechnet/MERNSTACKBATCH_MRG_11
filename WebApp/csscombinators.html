@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* div p
+            {
+                background-color: yellow;
+            } */
+            /* div>p
+            {
+                background-color: yellow;
+            } */
+            /* div+p
+            {
+                background-color: yellow;
+            } */
+            div~p
+            {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Paragraph 1 in the div</p>
+            <p>Paragraph 2 in the div</p>
+            <section>
+                <p>Paragraph 3 in the div</p>
+            </section>
+            <p>After Section Tag</p>
+        </div>
+        <p>This is outside paragraph-4</p>
+        <div>
+            <p>Next div element</p>
+        </div>
+        <p>This is outside paragraph-5</p>
+        <p>This  is outside another paragraph-6</p>
+    </body>
+</html>
