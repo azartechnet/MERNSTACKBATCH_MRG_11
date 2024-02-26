@@ -1,0 +1,56 @@
+<!-- text-overflow
+word-wrap
+word-break
+writing-mode -->
+
+<html>
+    <head>
+        <title></title>
+        <style>
+            p.test1
+            {
+              white-space: nowrap;
+              width:200px;
+              border:1px solid #000;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            p.test2
+            {
+              white-space: nowrap;
+              width:200px;
+              border:1px solid #000;
+              overflow: hidden;
+              text-overflow: clip;
+            }
+            p.test1:hover
+            {
+                overflow: visible;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>The text-overflow property</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ullam neque voluptatum dolor ratione aut modi repellendus 
+            aliquid deserunt, ipsam mollitia vero iusto,
+             omnis corporis aperiam vel veritatis doloribus nostrum tempore.
+        </p>
+        <h1>The text-overflow clip</h1>
+        <p class="test1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ullam neque voluptatum dolor ratione aut modi repellendus 
+            aliquid deserunt, ipsam mollitia vero iusto,
+             omnis corporis aperiam vel veritatis doloribus nostrum tempore.
+        </p>
+        <h1>The text-overflow ellipsis</h1>
+        <p class="test2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ullam neque voluptatum dolor ratione aut modi repellendus 
+            aliquid deserunt, ipsam mollitia vero iusto,
+             omnis corporis aperiam vel veritatis doloribus nostrum tempore.
+        </p>
+    </body>
+</html>

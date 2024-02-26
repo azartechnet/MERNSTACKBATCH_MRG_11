@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            p.test
+            {
+                width: 140px;
+                border: 1px solid #000;
+                /* word-wrap: break-word; */
+                word-break: keep-all;
+            }
+            p.test1
+            {
+                width: 140px;
+                border: 1px solid #000;
+                /* word-wrap: break-word; */
+                word-break: break-all;
+            }
+            p.test2
+            {
+                writing-mode:vertical-rl;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="test2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, distinctio amet, pariatur velit veritatis quidem 
+            totam aut atque deleniti eos voluptatem sequi,
+
+        </p>
+        <p class="test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptatum, distinctio amet, pariatur velit veritatis quidem 
+             totam aut atque deleniti eos voluptatem sequi,
+             ipsam nulla voluptates magni labore facere harum aliquid.
+        </p>
+        <p class="test1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptatum, distinctio amet, pariatur velit veritatis quidem 
+             totam aut atque deleniti eos voluptatem sequi,
+             ipsam nulla voluptates magni labore facere harum aliquid.
+        </p>
+    </body>
+</html>
