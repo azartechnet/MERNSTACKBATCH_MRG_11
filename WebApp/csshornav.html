@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top:0px;
+                width:100%
+            }
+            li
+            {
+                float:left;
+                border-right: 1px solid #bbb;
+            }
+            li a
+            {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                
+            }
+            li a:hover
+            {
+                background-color: #111;
+            }
+            .active
+            {
+                background-color: #04AA6D;
+            }
+            .flex-container
+            {
+                display: flex;
+
+            }
+            .flex-container>div
+            {
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+            <li style="float: right;"><a href="">Register</a></li>
+        </ul>
+        <img src="images/c1.jpeg" alt="">
+        <hr>
+        <center>
+            BankOffers
+        </center>
+        <hr>
+        <div class="flex-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+    </body>
+</html>
