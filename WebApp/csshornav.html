@@ -1,71 +1,94 @@
 <html>
-    <head>
-        <title></title>
-        <style>
-            ul
-            {
-                list-style-type: none;
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
-                background-color: #333;
-                position: fixed;
-                top:0px;
-                width:100%
-            }
-            li
-            {
-                float:left;
-                border-right: 1px solid #bbb;
-            }
-            li a
-            {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                
-            }
-            li a:hover
-            {
-                background-color: #111;
-            }
-            .active
-            {
-                background-color: #04AA6D;
-            }
-            .flex-container
-            {
-                display: flex;
 
-            }
-            .flex-container>div
-            {
-                margin: 10px;
-                padding: 20px;
-                font-size: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Login</a></li>
-            <li style="float: right;"><a href="">Register</a></li>
-        </ul>
-        <img src="images/c1.jpeg" alt="">
-        <hr>
-        <center>
-            BankOffers
-        </center>
-        <hr>
-        <div class="flex-container">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-        </div>
-    </body>
+<head>
+    <title></title>
+    <style>
+        /* Nav bar Start */
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333;
+            /* position: fixed; */
+            top: 0px;
+            width: 100%
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+          /* Nav bar end */
+          /* Flex box Start */
+        .container {
+            display: flex;
+        }
+
+        .item {
+            flex-grow: 1;
+            flex-wrap:wrap-reverse;
+            height: 100px;
+        }
+
+        .item+.item {
+            margin-left: 2%;
+        }
+        /* Flex box end */
+        /* img size */
+        .v1
+        {
+            /* overflow: hidden; */
+            width:100%
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+        <li style="float: right;"><a href="">Register</a></li>
+    </ul>
+    <img src="images/c1.jpeg" alt="" class="v1"/>
+    <hr>
+    <center>
+        BankOffers
+    </center>
+    <hr>
+    <div class="container">
+        <div class="item"><img src="images/b1.jpeg" alt=""></div>
+        <div class="item"><img src="images/b2.jpeg" alt=""></div>
+        <div class="item"><img src="images/b3.jpeg" alt=""></div>
+       
+    </div>
+    <br>
+    <div class="container">
+        <div class="item"><img src="images/b1.jpeg" alt=""></div>
+        <div class="item"><img src="images/b2.jpeg" alt=""></div>
+        <div class="item"><img src="images/b3.jpeg" alt=""></div>
+       
+    </div>
+    
+</body>
+
 </html>
