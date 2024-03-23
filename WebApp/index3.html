@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        /* Nav bar Start */
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333;
+            /* position: fixed; */
+            top: 0px;
+            width: 100%
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+          /* Nav bar end */
+          /* Flex box Start */
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-items: baseline;
+        }
+
+        .item {
+            flex-grow: 1;
+            
+            height: 100px;
+        }
+
+        .item+.item {
+            margin-left: 2%;
+        }
+        /* Flex box end */
+        /* img size */
+        .v1
+        {
+            /* overflow: hidden; */
+            width:100%
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="plogin.html">Login</a></li>
+        <li style="float: right;"><a href="">Register</a></li>
+    </ul>
+    <img src="images/c1.jpeg" alt="" class="v1"/>
+    <hr>
+    <center>
+        <h2>BankOffers</h2>
+    </center>
+    <hr>
+    <div class="container">
+        <div class="item"><img src="images/b1.jpeg" alt="" ></div>
+        <div class="item"><img src="images/b2.jpeg" alt=""></div>
+        <div class="item"><img src="images/b3.jpeg" alt=""></div>
+       
+    </div>
+    <hr>
+    <center>
+        <h2>Product1</h2>
+    </center>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="item"><img src="images/p1.png" alt="" width="200px" height="200px"></div>
+        <div class="item"><img src="images/p2.png" alt=""  width="200px" height="200px"></div>
+        <div class="item"><img src="images/p3.png" alt=""  width="200px" height="200px"></div>
+        <div class="item"><img src="images/p4.png" alt=""  width="200px" height="200px"></div>
+       
+    </div>
+    <hr>
+    <center>
+        <h4><b>@CopyRight2024</b></h4>
+    </center>
+</body>
+
+</html>
