@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var age=parseInt(prompt("Enter the age is::"))
+            if(age>61)
+            {
+                var sal=parseInt(prompt("Enter the salary is::"))
+                if(sal>=20000)
+                {
+                    bns=sal+500;
+                    document.write("<h3><u>Details of Employee</u></h3>");
+                    document.write("Age: "+age+"<br>Salary:"+sal);
+                    document.write("<hr>Bonus amount is::"+bns);
+                }
+                else
+                {
+                   
+                     document.write("<h3><u>Details of Employee</u></h3>");
+                      document.write("Age: "+age+"<br>Salary:"+sal);
+                       document.write('The bonus will be given in next month');
+                
+                }
+            }
+            else
+            {
+                 alert("Sorry, you are not eligible for Bonus.") 
+            }
+        </script>
+    </body>
+</html>
