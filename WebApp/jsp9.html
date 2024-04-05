@@ -1,0 +1,29 @@
+<h1>Your Result is::<span id="d1"></span></h1>
+<script>
+    var exp=parseInt(prompt("Enter the exp"))
+    
+    switch(exp)
+    {
+        case 1:
+            // document.write("<h2>You are a beginner</h2>");
+            document.getElementById("d1").innerHTML="Welcome";
+            break;
+        case 2:
+            a=parseInt(prompt("How many times have you coded today?"));
+            if(a%2==0)
+            {
+                document.write("Its is Even")
+            }
+            else
+            {
+                document.write("Its is Odd")
+            }
+            break;
+        case 3:
+            document.write("<h2>This is case 3</h2>")
+            break;
+        default:
+            document.write("Its is default case")
+            break;
+    }
+</script>
