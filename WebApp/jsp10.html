@@ -4,10 +4,18 @@
     </head>
     <body>
         <script>
-            for(i=0;i<=5;i++)
-            {
-                document.write(i + " ");
-            }
+           var num=parseInt(prompt("Enter the num is::"))
+           for(i=0;i<num;i++)
+           {
+               if(i%2==0)
+               {
+                  document.write("<h1 style='color:blue'>Even"+i+"</h1>");
+               }
+               else
+               {
+                   document.write("<p style='color:red'>Odd"+i+"</p>")
+               }
+           }
         </script>
     </body>
 </html>
