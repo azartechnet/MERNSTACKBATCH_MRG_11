@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Chart Example</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+
+    // Data for the line chart
+    var data = [20, 40, 50, 70, 90, 80, 100];
+
+    // Function to draw the line chart
+    function drawLineChart(data) {
+      var x = 0;
+      var y = canvas.height - data[0];
+      var step = canvas.width / (data.length - 1);
+
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+
+      for (var i = 1; i < data.length; i++) {
+        x += step;
+        y = canvas.height - data[i];
+        ctx.lineTo(x, y);
+      }
+
+      ctx.strokeStyle = 'blue';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // Call the drawLineChart function with the data
+    drawLineChart(data);
+  </script>
+</body>
+</html>

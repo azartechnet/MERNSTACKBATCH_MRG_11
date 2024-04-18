@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Text Example</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById('myCanvas');
+
+    // Get the drawing context for the canvas
+    var ctx = canvas.getContext('2d');
+
+    // Set font properties
+    ctx.font = '30px Arial';
+    ctx.fillStyle = 'blue';
+
+    // Fill text
+    ctx.fillText('Hello, Canvas!', 200, 100);
+  </script>
+</body>
+</html>
