@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p>FirstName::<input name="fname" type="text" value="mohamed"></p>
+        <p>LastName::<input name="lname" type="text" value="azar"></p><br/>
+        <p id="d1"></p>
+        <script>
+            let elem=document.getElementsByName("fname");
+            document.getElementById('d1').innerHTML=elem[0].tagName;
+        </script>
+    </body>
+</html>
