@@ -1,0 +1,13 @@
+<p>Your size is::<span id="d1"></span></p>
+<script>
+    const emp=new Map([
+        [1001,"azar"],[1002,"mohamed"],[1003,"raja"]
+    ])
+    
+     //delete an elements
+     emp.delete(1001)
+     console.log(emp)
+     //Search the key values
+     emp.has(1001)
+     document.getElementById("d1").innerHTML=emp.size;
+</script>
