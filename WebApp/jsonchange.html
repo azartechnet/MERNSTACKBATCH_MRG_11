@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <select id="my1" onchange="myfun()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Ferrari">Ferrari</option>
+            <optgroup label="PG">
+                <option>MCA</option>
+                <option>MBA</option>
+            </optgroup>
+        </select>
+        <script>
+            function myfun(){
+                var x = document.getElementById("my1").value;  //get the selected option's value
+                alert(x);                               //display it in an alert box
+            }
+        </script>
+    </body>
+</html>

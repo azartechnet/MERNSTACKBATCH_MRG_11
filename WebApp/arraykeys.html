@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p>Your data is::<span id="d1"></span></p>
+        <script>
+            const empname=["azar","mohamed","raja"]
+            // const k1=empname.keys()
+            // const k1=empname.entries()
+            const k1=empname.values()
+            let text=""
+            for (let r of k1){
+                    text+=r+"<br>";
+            }
+            document.getElementById("d1").innerHTML=text;
+            
+        </script>
+    </body>
+</html>
