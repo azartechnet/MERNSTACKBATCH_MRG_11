@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="d1"></p>
+        <script>
+            document.getElementById("d1").innerHTML="Browser inner window width"+window.innerWidth+"<br>"
+            +"outer window width "+window.outerWidth;
+        </script>
+    </body>
+</html>
+<!--
+    window.open()
+    window.close()
+    window.moveTo()
+    window.resizeTo()
+-->
+<!--
+    window.screen
+    screen.width
+    screen.height
+    screen.availWidth
+    screen.availHeight
+    screen.colorDepth
+    screen.orientation
+
+-->
+<!--
+    window.location
+    location.href - returns the URL of the current page in a string
+     location.reload(true) - reload the page from the server (not from cache)
+     location.assign(url) 
+     location.replace(url)  - replaces the current entry in the history with the new item
+      History API
+         history.back();
+         history.forward();
+          history.go(-2); // go back two steps
+           history.pushState(state, title, url);
+-->
