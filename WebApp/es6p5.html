@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="d1"></p>
+        <script>
+            var empname=new Map([
+                ["1","John"],
+                ["2","mohamed"],
+                ["3","raja"]
+            ])
+            // console.log(empname);
+
+            // let s2=empname.get("1");
+            let s1=empname.entries;
+            document.getElementById("d1").innerHTML="There are"+s1;
+            document.getElementById("d1").innerHTML=s2;
+        </script>
+    </body>
+</html>

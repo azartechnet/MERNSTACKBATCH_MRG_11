@@ -1,0 +1,18 @@
+<p id="d1"></p>
+<p id="d2"></p>
+<script>
+    class Sample
+    {
+        constructor(name, age)
+        {
+            this.name = name;
+            this.age=age;
+        }
+    }
+    const my1=new Sample("azar",35)
+    const my2=new Sample("mohamed",36)
+
+    document.getElementById("d1").innerHTML=my1.name+""+my1.age;
+
+    document.getElementById("d2").innerHTML=my2.name+""+my2.age;
+</script>
