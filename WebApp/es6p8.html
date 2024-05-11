@@ -1,0 +1,14 @@
+<p id="d1"></p>
+<script>
+    const empname = new Map();
+
+    // Add the values to the map
+    empname.set(1, "Azar");
+    empname.set(2, "Mohamed");
+    empname.set(3, "Mohan");
+
+    // Loop through the map entries and display the values
+    empname.forEach((value, key) => {
+        document.getElementById('d1').innerHTML += key + ": " + value + "<br>";
+    });
+</script>
