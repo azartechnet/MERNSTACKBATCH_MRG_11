@@ -76,7 +76,7 @@ r3.render(<Myelem/>)*/
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(myElement);
 
-const Myelem=()=>{
+/*const Myelem=()=>{
 const username="mohamed";
     return(
         <div>
@@ -86,9 +86,99 @@ const username="mohamed";
 }
 
 const r4=ReactDOM.createRoot(document.getElementById('root'))
-r4.render(<Myelem/>)
+r4.render(<Myelem/>)*/
 
+//React Example
+
+/*const App=()=>{
+    return(
+        <div className='s1'>
+            <h1>React is {5 + 5} times better with JSX</h1>;
+
+        </div>
+    )
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+
+r1.render(<App/>)*/
 
 //Conditional Rendering
+
+/*const x=10
+let text=""
+if(x>10){
+    text="goodbye"
+}
+else if(x==10)
+{
+    text="ten"
+}
+else
+{
+    text="x is less than 10"
+}
+const Myelem=()=>{
+    return(
+        <div>
+            <h1>Hello{text}</h1>
+        </div>
+    )
+}
+
+const r2=ReactDOM.createRoot(document.getElementById('root'))
+r2.render(<Myelem/>)*/
+
+//React class component
+
+/*class Sample extends React.Component
+{
+    render()
+    {
+        return(
+            <div>
+                <h1>Welcome to the class compoent</h1>
+            </div>
+        )
+    }
+}*/
+
+//Function component with props
+
+/*function Sample(props)
+{
+    return(
+        <>
+          <h1>Welcome to function Component</h1>
+          <p>{props.name}</p>
+          <p>{props.age}</p>
+        </>
+    )
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Sample name={"mohamed"} age={34}/>)*/
+
+//Component in Component
+
+function Sample() {
+    return (
+        <>
+            <h2>I am a Sample!</h2>
+        </>
+
+    )
+  }
+  function Azar() {
+    return (
+      <>
+          <h1>Who lives in my Azar?</h1>
+          <Sample />
+      </>
+    );
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<Azar />);
+  
+
 
 
