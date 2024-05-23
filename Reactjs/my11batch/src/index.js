@@ -159,7 +159,7 @@ r1.render(<Sample name={"mohamed"} age={34}/>)*/
 
 //Component in Component
 
-function Sample() {
+/*function Sample() {
     return (
         <>
             <h2>I am a Sample!</h2>
@@ -177,8 +177,42 @@ function Sample() {
   }
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<Azar />);
+  root.render(<Azar />);*/
+
+  //Component in Files
+
+ /* import Sample from './App';
+
+  const r1=ReactDOM.createRoot(document.getElementById('root'))
+  r1.render(<Sample/>)*/
+
+  //Component Constructor
+
+  class Sample extends React.Component
+  {
+     constructor()
+     {
+        super();
+        this.state={name:"mohamed",age:34}
+     }
+     render()
+     {
+        return(
+            <>
+            <h1>UserName::{this.state.name}</h1>
+            <h2>Password::{this.state.age}</h2>
+            </>
+          
+        )
+     }
+  }
   
+  const r1=ReactDOM.createRoot(document.getElementById('root'))
+  r1.render(<Sample/>)
+
+
+//React State
+
 
 
 
