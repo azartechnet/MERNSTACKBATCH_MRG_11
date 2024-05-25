@@ -188,7 +188,7 @@ r1.render(<Sample name={"mohamed"} age={34}/>)*/
 
   //Component Constructor
 
-  class Sample extends React.Component
+  /*class Sample extends React.Component
   {
      constructor()
      {
@@ -208,10 +208,85 @@ r1.render(<Sample name={"mohamed"} age={34}/>)*/
   }
   
   const r1=ReactDOM.createRoot(document.getElementById('root'))
-  r1.render(<Sample/>)
+  r1.render(<Sample/>)*/
+  
+
+//Constructor using props
+
+/*class Sample extends React.Component
+{
+    constructor(props)
+    {
+        super(props);
+        this.state={f1:'green'}
+        //this.state={f2:'Courier New'}
+    }
+    render()
+    {
+        
+        return(
+            <div>
+            <h3 style={{background:this.state.f1}}>{this.props.text}</h3>
+            <h3 style={{fontFamily:this.state.f2}}>{this.props.text}</h3>
+            
+        
+            </div>
+            
+        )
+    }
+}
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Sample text='Hello World'/>)*/
+
+//Changing the state object
+
+class Sample extends React.Component
+{
+  constructor(props)
+  {
+     super(props);
+     this.state = {
+       emp:{
+          id:1002,
+          name:"azar",
+          city:"Lahore"
+       },
+       showData:false
+  };
+}
+showdata(){
+  this.setState({showData:true });
+}
+ hideData(){
+   this.setState({showData:false});
+ }
+  render()
+   {
+     let data ;
+      if (this.state.showData== true) 
+      {
+         data= <div><b>City :</b>{this.state.emp.city}<b>Id::</b>{this.state.emp.id}<br/>
+           <button onClick={this.hideData.bind(this)} >Hide Data</button></div>;
+      }
+      else
+       {
+         data= <button onClick={this.showdata.bind(this)} >Show Data</button>;
+          }
+            return (
+               <div className="App">
+                <h1>Employee Details </h1>
+                 {data}
+              </div>
+              );
+               }
+};
+//ReactDOM.render(<Sample /> ,document.getElementById('root'));
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Sample /> )
 
 
-//React State
+
 
 
 
