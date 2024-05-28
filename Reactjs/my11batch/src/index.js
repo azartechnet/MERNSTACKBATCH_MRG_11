@@ -304,7 +304,7 @@ r1.render(<Football/>)*/
 
 //React Event
 
-function Football()
+/*function Football()
 {
     const shoot=(a)=>{
         alert("Goal"+a);
@@ -314,10 +314,74 @@ function Football()
     )
 }
 const r1=ReactDOM.createRoot(document.getElementById('root'))
-r1.render(<Football/>)
+r1.render(<Football/>)*/
+
+//React Bootstrap
+
+/*const App=()=>{
+    return(
+        <>
+          <button type='button' className='btn btn-primary'>ClickHere</button>
+        </>
+    )
+}
+
+const t1=ReactDOM.createRoot(document.getElementById('root'))
+t1.render(<App/>)*/
+
+//React Hooks useState()
+
+import { useState,useEffect } from 'react';
+
+/*function Counter()
+{
+    const [count,setCount]=useState(10);
+    const [name,setName]=useState("Rahul");
+
+    return(
+        <>
+          <div>
+            <h1>Count:{count}</h1>
+            <h1>Your name is::{name}</h1>
+            <button onClick={()=>setCount(count+1)}>Increment</button>
+          </div>
+        </>
+    )
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Counter/>)*/
+
+function Counter()
+{
+    const [count,setCount]=useState(0)
+    const [username,setUsername]=useState("");
+    const [password,setPassword]=useState("");
+    return(
+        <>
+          <p>Count::{count}</p>
+          <button onClick={()=>setCount(count+1)}>Increment</button>
+          <p>Username::{username}</p>
+          <input type='text' value={username} onChange={(e)=>setUsername(e.target.value)}/>
+          <p>Password::{password}</p>
+          <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+
+          <table border='1'>
+            <th>UserName</th>
+            <th>Password</th>
+            <tr>
+                <td>{username}</td>
+                <td>{password}</td>
+            </tr>
+        
+          </table>
+        </>
+    )
+}
 
 
-
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Counter/>)
 
 
 
