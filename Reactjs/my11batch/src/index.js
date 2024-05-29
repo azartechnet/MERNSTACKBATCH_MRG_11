@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css';
+// import './index.css';
 /*const Sample=()=>{
 
    return(
@@ -352,7 +352,7 @@ import { useState,useEffect } from 'react';
 const r1=ReactDOM.createRoot(document.getElementById('root'))
 r1.render(<Counter/>)*/
 
-function Counter()
+/*function Counter()
 {
     const [count,setCount]=useState(0)
     const [username,setUsername]=useState("");
@@ -381,7 +381,88 @@ function Counter()
 
 
 const r1=ReactDOM.createRoot(document.getElementById('root'))
-r1.render(<Counter/>)
+r1.render(<Counter/>)*/
 
+//Conditional Rendering
 
+/*function MissedGoal()
+{
+    return<h1>MissedGoal</h1>
+}
+function MadeGoal()
+{
+    return<h1>Goal</h1>
+}
+function Goal(props)
+{
+    const isGoal=props.isGoal;
+    // return<h1>{isGoal}</h1>
+    if(isGoal==true)
+    {
+        return<MadeGoal/>
+    }
+    else
+    {
+        return<MissedGoal/>
+    }
+}
 
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Goal isGoal={Math.random()>0.7}/>)*/
+
+//React List
+
+/*function Emp(props) {
+    return <h1>{props.n1}</h1>;
+}
+
+function Salary() {
+    //const emp = ["mohan", "mohamed", "azar", "raja"];
+    const emp={1:"azar",2:"mohamed",3:"raja"}
+    return (
+        <ul>
+            {emp.map((c1) => (
+                <Emp n1={c1} key={c1} />
+            ))}
+        </ul>
+    );
+}
+
+const r1 = ReactDOM.createRoot(document.getElementById('root'));
+r1.render(<Salary />);*/
+
+//React Form
+
+/*function Sample()
+{
+    return(
+        <>
+          <form>
+            <label>UserName</label>
+            <input type='text' />
+            <label>Password</label>
+            <input type='password'/>
+            <input type='submit' value="Login" className='btn btn-primary'/>
+          </form>
+        </>
+    )
+}
+
+const r1 = ReactDOM.createRoot(document.getElementById('root'));
+r1.render(<Sample />)*/
+
+//React TextArea
+
+function MyTextArea()
+{
+    const[value,setvalue]=React.useState("Helloworld")
+    return(
+    <>
+      <textarea value={value} onChange={(e)=>setvalue(e.target.value)}></textarea>
+      <p>{value}</p>
+    </>
+    )
+}
+
+const r1 = ReactDOM.createRoot(document.getElementById('root'));
+ r1.render(<MyTextArea />);
