@@ -453,7 +453,7 @@ r1.render(<Sample />)*/
 
 //React TextArea
 
-function MyTextArea()
+/*function MyTextArea()
 {
     const[value,setvalue]=React.useState("Helloworld")
     return(
@@ -465,4 +465,57 @@ function MyTextArea()
 }
 
 const r1 = ReactDOM.createRoot(document.getElementById('root'));
- r1.render(<MyTextArea />);
+ r1.render(<MyTextArea />);*/
+
+ //React getDerivedStateFromProps
+
+ /*class Header extends React.Component
+ {
+    constructor(props)
+    {
+        super(props);
+        this.state={favcolor:"red"};
+    }
+    static getDerivedStateFromProps(props,state)
+    {
+
+        return {favcolor:props.favcolor}
+    }
+    render()
+    {
+        return(
+            <h1>This is reader Page{this.state.favcolor}</h1>
+        )
+    }
+ }
+
+ const r1=ReactDOM.createRoot(document.getElementById('root'))
+ r1.render(<Header favcolor="pink"/>)*/
+
+ //ComponentDidMount
+
+ class Header extends React.Component
+ {
+    constructor(props)
+    {
+        super(props);
+        this.state={favcolor:"red"};
+    }
+    
+    componentDidMount()
+    {
+        setTimeout(()=>{
+            this.setState({favcolor:"yellow"})
+        },1000)
+    }
+
+    render()
+    {
+        return(
+            <h1>This is reader Page{this.state.favcolor}</h1>
+        )
+    }
+ }
+
+ const r1=ReactDOM.createRoot(document.getElementById('root'))
+ r1.render(<Header/>)
