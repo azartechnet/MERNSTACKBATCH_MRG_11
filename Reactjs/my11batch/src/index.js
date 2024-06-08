@@ -553,7 +553,7 @@ const r1 = ReactDOM.createRoot(document.getElementById('root'));
 
  //shouldComponentUpdate()
 
- class Header extends React.Component
+ /*class Header extends React.Component
  {
     constructor(props)
     {
@@ -581,4 +581,62 @@ const r1 = ReactDOM.createRoot(document.getElementById('root'));
  }
 
  const r1=ReactDOM.createRoot(document.getElementById('root'))
- r1.render(<Header/>)
+ r1.render(<Header/>)*/
+
+//React useEffects
+
+/*function Timer()
+{
+    const [count,setCount]=useState(0)
+    useEffect(()=>{
+        setTimeout(()=>{
+            setCount((count)=>count+1)
+        },1000)
+    })
+    return <h1>I have renderd {count}</h1>
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Timer/>)*/
+
+/*function Timer()
+{
+    const [count,setCount]=useState(0);
+    useEffect(()=>{
+        let timer=setTimeout(()=>{
+            setCount((count)=>count+1)
+            console.log(timer)
+            console.log(count)
+        },2000)
+        return()=>clearTimeout(timer)
+    },[])
+    return <h1>I have render {count}</h1>
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Timer/>)*/
+
+//React without useContext
+
+function Component1()
+{
+    const [user,setUser]=useState("mohamed")
+    return(
+        <>
+            <h1>{{user}}</h1>
+            <Component2 user={user}/>
+        </>
+    )
+}
+function Component2({user})
+{
+    return(
+        <>
+           <h1>Component2</h1>
+           <p>{user}profile</p>
+        </>
+    )
+}
+
+const r1=ReactDOM.createRoot(document.getElementById('root'))
+r1.render(<Component1/>)
